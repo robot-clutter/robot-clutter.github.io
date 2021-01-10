@@ -3,7 +3,6 @@ import { DarkModeSwitch } from 'react-toggle-dark-mode';
 import { useTheme } from 'next-themes';
 import Link from 'next/link';
 
-
 function MainHeader(): ReactElement {
   const { setTheme, resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);

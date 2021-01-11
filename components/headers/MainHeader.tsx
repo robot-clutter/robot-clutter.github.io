@@ -27,13 +27,15 @@ function MainHeader(): ReactElement {
         <div className="flex justify-between h-16">
           <div className="flex">
             <div className="flex-shrink-0 flex items-center">
-              <Link href="/">
-                <img
-                  className="block h-8 w-auto cursor-pointer"
-                  src={isDarkMode ? 'vercel-white.svg' : 'vercel.svg'}
-                  alt="Workflow"
-                />
-              </Link>
+              {mounted && (
+                <Link href="/">
+                  <img
+                    className="block h-8 w-auto cursor-pointer"
+                    src={isDarkMode ? 'vercel-white.svg' : 'vercel.svg'}
+                    alt="Workflow"
+                  />
+                </Link>
+              )}
             </div>
           </div>
           <div className="ml-6 flex items-center">

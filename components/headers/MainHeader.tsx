@@ -31,7 +31,7 @@ function MainHeader(): ReactElement {
                 <Link href="/">
                   <img
                     className="block h-8 w-auto cursor-pointer"
-                    src={isDarkMode ? 'vercel-white.svg' : 'vercel.svg'}
+                    src={isDarkMode ? 'vercel-white.svg' : 'robot-arm.svg'}
                     alt="Workflow"
                   />
                 </Link>

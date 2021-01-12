@@ -29,10 +29,11 @@ export interface ImageInterface {
   alt?: string;
 }
 
-export interface CodeInterface {
+export interface LinkInterface {
   file?: string;
   link?: string;
   alias: string;
+  type: 'code' | 'documentation' | 'manuscript';
 }
 
 export interface PublicationInterface {
@@ -43,5 +44,5 @@ export interface PublicationInterface {
   authors: string[];
   image: ImageInterface;
   video: string;
-  code: CodeInterface[];
+  code: LinkInterface[];
 }

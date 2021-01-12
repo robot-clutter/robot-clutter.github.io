@@ -3,7 +3,7 @@ import ReactPlayer from 'react-player';
 import Image from './Image';
 import { PublicationInterface } from '../../types';
 import PublicationAuthors from './PublicationAuthors';
-import Code from './Code';
+import ButtonLinks from './ButtonLinks';
 
 function Publication({ title, authors, type, abstract, image, video, code }: PublicationInterface): ReactElement {
   return (
@@ -51,6 +51,8 @@ function Publication({ title, authors, type, abstract, image, video, code }: Pub
           </div>
 
           <div className="mt-8 lg:mt-0 lg:col-span-3 min-h-screen">
+            <ButtonLinks code={code} />
+
             <PublicationAuthors authors={authors} />
             <div className="mt-5 prose prose-cyan text-gray-500 dark:text-gray-300 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
               <h3 className="text-gray-500 dark:text-gray-300">Abstract</h3>
@@ -60,7 +62,6 @@ function Publication({ title, authors, type, abstract, image, video, code }: Pub
               <h3 className="text-gray-500 dark:text-gray-300">Media</h3>
               <ReactPlayer className="rounded-lg" width="auto" url={video} controls />
             </div>
-            <Code code={code} />
           </div>
         </div>
       </div>

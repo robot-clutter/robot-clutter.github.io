@@ -30,8 +30,8 @@ function MainHeader(): ReactElement {
               {mounted && (
                 <Link href="/">
                   <img
-                    className="block h-8 w-auto cursor-pointer"
-                    src={isDarkMode ? 'vercel-white.svg' : 'robot_arm.svg'}
+                    className="block h-12 w-auto cursor-pointer"
+                    src={isDarkMode ? 'logo-white.svg' : 'logo-black.svg'}
                     alt="Workflow"
                   />
                 </Link>

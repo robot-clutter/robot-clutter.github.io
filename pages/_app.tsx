@@ -1,5 +1,6 @@
 import { FC, ReactNode } from 'react';
 import { ThemeProvider } from 'next-themes';
+import 'line-awesome/dist/line-awesome/css/line-awesome.min.css';
 import PageWithLayoutType from '../types';
 
 import '../global.css';

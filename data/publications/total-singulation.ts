@@ -31,13 +31,13 @@ const TOTAL_SINGULATION_PUB = {
     //   type: 'documentation',
     // },
   ] as LinkInterface[],
-    bib: `
+  bib: `
 @article{zeng2019tossingbot,
   title={TossingBot: Learning to Throw Arbitrary Objects with Residual Physics},
   author={Zeng, Andy and Song, Shuran and Lee, Johnny and Rodriguez, Alberto and Funkhouser, Thomas},
   booktitle={Proceedings of Robotics: Science and Systems (RSS)},
   year={2019}
-}`
+}`,
 };
 
 export default TOTAL_SINGULATION_PUB;

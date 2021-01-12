@@ -45,4 +45,5 @@ export interface PublicationInterface {
   image: ImageInterface;
   video: string;
   code: LinkInterface[];
+  bib?: string;
 }

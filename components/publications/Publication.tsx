@@ -4,8 +4,9 @@ import Image from './Image';
 import { PublicationInterface } from '../../types';
 import PublicationAuthors from './PublicationAuthors';
 import ButtonLinks from './ButtonLinks';
+import BibtexBox from './BibtexBox';
 
-function Publication({ title, authors, type, abstract, image, video, code }: PublicationInterface): ReactElement {
+function Publication({ title, authors, type, abstract, image, video, code, bib }: PublicationInterface): ReactElement {
   return (
     <div className="bg-gray-50 dark:bg-gray-900 overflow-hidden">
       <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
@@ -61,6 +62,7 @@ function Publication({ title, authors, type, abstract, image, video, code }: Pub
             <div className="mt-5 prose prose-cyan text-gray-500 dark:text-gray-300 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
               <h3 className="text-gray-500 dark:text-gray-300">Media</h3>
               <ReactPlayer className="rounded-lg" width="auto" url={video} controls />
+              <BibtexBox bib={bib} />
             </div>
           </div>
         </div>

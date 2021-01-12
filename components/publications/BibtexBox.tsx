@@ -1,5 +1,6 @@
 import { ReactElement } from 'react';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+// import { dark } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
 import { useTheme } from 'next-themes';
 
 function BibtexBox({ bib }: { bib?: string }): ReactElement {
@@ -14,13 +15,15 @@ function BibtexBox({ bib }: { bib?: string }): ReactElement {
           <div className="mt-5 prose prose-cyan text-gray-500 dark:text-gray-300 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
             <h3 className="text-gray-500 dark:text-gray-300">Bibtex</h3>
             <SyntaxHighlighter
-              useInlineStyles={false}
+              // styles={dark}
+              // useInlineStyles={false}
               language="latex"
-              className="p-0 m-0"
+              // className="p-0 m-0"
               customStyle={{
-                padding: '0 24px',
+                padding: '16px',
                 margin: 0,
-                background: isDarkMode ? '#fff' : '000',
+                // background: isDarkMode ? '#fff' : '000',
+                // backgroundColor: isDarkMode ? '#fff' : '000',
               }}
             >
               {bib}

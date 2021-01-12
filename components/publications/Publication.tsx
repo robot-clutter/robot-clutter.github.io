@@ -1,4 +1,4 @@
-import { ReactElement } from 'react';
+import { ReactElement, useEffect, useState } from 'react';
 import ReactPlayer from 'react-player';
 import Image from './Image';
 import { PublicationInterface } from '../../types';
@@ -7,9 +7,14 @@ import ButtonLinks from './ButtonLinks';
 import BibtexBox from './BibtexBox';
 
 function Publication({ title, authors, type, abstract, image, video, code, bib }: PublicationInterface): ReactElement {
+
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => setMounted(true), []);
+
   return (
     <div className="bg-gray-50 dark:bg-gray-900 overflow-hidden">
-      <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+      {mounted && <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
         <div className="hidden lg:block bg-gray-50 dark:bg-gray-900 absolute top-0 bottom-0 left-3/4 w-screen" />
         <div className="mx-auto text-base max-w-prose lg:max-w-none ">
           <h2 className="text-base text-cyan-600 dark:text-cyan-800 font-semibold tracking-wide uppercase">{type}</h2>
@@ -62,11 +67,11 @@ function Publication({ title, authors, type, abstract, image, video, code, bib }
             <div className="mt-5 prose prose-cyan text-gray-500 dark:text-gray-300 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
               <h3 className="text-gray-500 dark:text-gray-300">Media</h3>
               <ReactPlayer className="rounded-lg" width="auto" url={video} controls />
-              <BibtexBox bib={bib} />
             </div>
+            <BibtexBox bib={bib} />
           </div>
         </div>
-      </div>
+      </div>}
     </div>
   );
 }

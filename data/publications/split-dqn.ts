@@ -1,4 +1,4 @@
-import { ImageInterface, CodeInterface } from '../../types';
+import { ImageInterface, LinkInterface } from '../../types';
 
 const SPLIT_DQN_PUB = {
   slug: 'split-dqn',

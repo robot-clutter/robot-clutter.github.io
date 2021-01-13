@@ -1,11 +1,11 @@
 import { ImageInterface, LinkInterface } from '../../types';
 
-const TOTAL_SINGULATION_PUB = {
-  slug: 'total-singulation',
+const MODULAR_RL_PUB = {
+  slug: 'modular-rl',
   title: 'Total Singulation with Modular Reinforcement Learning',
   image: {
     src: 'PUBLIC_FOLDER',
-    path: 'total_singulation_header_image.jpg',
+    path: 'modular_rl_header_image.jpg',
     width: 1040,
     height: 975,
   } as ImageInterface,
@@ -40,4 +40,4 @@ const TOTAL_SINGULATION_PUB = {
   // }`,
 };
 
-export default TOTAL_SINGULATION_PUB;
+export default MODULAR_RL_PUB;

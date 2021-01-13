@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import { FC } from 'react';
 import MainLayout from '../../components/layouts/MainLayout';
-import FIRST_PAPER_DATA from '../../data/publications/total-singulation';
+import FIRST_PAPER_DATA from '../../data/publications/modular-rl';
 import PageWithLayoutType from '../../types';
 import Publication from '../../components/publications/Publication';
 

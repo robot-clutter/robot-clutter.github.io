@@ -1,5 +1,6 @@
-import { FC, ReactNode } from 'react';
+import { FC, ReactElement, ReactNode } from 'react';
 import { ThemeProvider } from 'next-themes';
+import { ToastProvider, DefaultToast } from 'react-toast-notifications';
 import 'line-awesome/dist/line-awesome/css/line-awesome.min.css';
 import PageWithLayoutType from '../types';
 
@@ -11,13 +12,25 @@ type AppLayoutProps = {
   pageProps: any;
 };
 
+function ToastComponent(props: any): ReactElement {
+  return <DefaultToast className="bg-white dark:bg-gray-600 dark:text-gray-100 text-2xl mt-8 mr-8" {...props} />;
+}
+
 const App: FC<AppLayoutProps> = ({ Component, pageProps }: AppLayoutProps) => {
   const Layout = Component.layout || ((children: ReactNode) => <>{children}</>);
   return (
     <ThemeProvider attribute="class">
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
+      <ToastProvider
+        autoDismiss
+        autoDismissTimeout={3000}
+        components={{
+          Toast: ToastComponent,
+        }}
+      >
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </ToastProvider>
     </ThemeProvider>
   );
 };

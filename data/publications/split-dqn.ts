@@ -29,6 +29,8 @@ const SPLIT_DQN_PUB = {
       link: 'https://github.com/robot-clutter/robot-clutter.github.io',
       alias: 'Github Repo',
       type: 'code',
+      disabled: true,
+      disabledText: 'Source code is not yet available. Please check again soon.',
     },
     // {
     //   link: 'https://github.com/robot-clutter/robot-clutter.github.io',

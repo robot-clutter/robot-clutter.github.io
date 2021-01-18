@@ -34,6 +34,8 @@ export interface LinkInterface {
   link?: string;
   alias: string;
   type: 'code' | 'documentation' | 'manuscript';
+  disabled?: boolean;
+  disabledText?: string;
 }
 
 export interface PublicationInterface {

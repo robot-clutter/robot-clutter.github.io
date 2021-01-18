@@ -25,7 +25,7 @@ const MODULAR_RL_PUB = {
       alias: 'Github Repo',
       type: 'code',
       disabled: true,
-      disabledText: 'Source code is not yet available. Please check again soon.',
+      disabledText: 'Source code is not available yet. Please check again soon.',
     },
     // {
     //   link: 'https://github.com/robot-clutter/robot-clutter.github.io',

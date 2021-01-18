@@ -17,7 +17,7 @@ function ButtonLinks({ code }: { code: LinkInterface[] }): ReactElement {
           const Icon = iconMap[type];
           if (disabled) {
             return (
-              <div key={alias}>
+              <span key={alias}>
                 <button
                   type="button"
                   onClick={(e) => {
@@ -29,7 +29,7 @@ function ButtonLinks({ code }: { code: LinkInterface[] }): ReactElement {
                   <Icon className="text-lg mr-2" />
                   {alias}
                 </button>
-              </div>
+              </span>
             );
           }
           return (

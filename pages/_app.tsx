@@ -12,6 +12,7 @@ type AppLayoutProps = {
   pageProps: any;
 };
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 function ToastComponent(props: any): ReactElement {
   return <DefaultToast className="bg-white dark:bg-gray-600 dark:text-gray-100 text-2xl mt-8 mr-8" {...props} />;
 }

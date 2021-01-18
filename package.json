@@ -21,6 +21,7 @@
     "react-player": "2.7.2",
     "react-toast-notifications": "2.4.0",
     "react-toggle-dark-mode": "1.0.3",
+    "react-use-clipboard": "1.0.7",
     "tailwindcss": "2.0.2"
   },
   "devDependencies": {

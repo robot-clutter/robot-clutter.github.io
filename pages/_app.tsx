@@ -22,7 +22,7 @@ const App: FC<AppLayoutProps> = ({ Component, pageProps }: AppLayoutProps) => {
     <ThemeProvider attribute="class">
       <ToastProvider
         autoDismiss
-        autoDismissTimeout={3000}
+        autoDismissTimeout={4000}
         components={{
           Toast: ToastComponent,
         }}

@@ -30,6 +30,7 @@ module.exports =
             '@fullhuman/postcss-purgecss',
             {
               content: ['./**/*.tsx'],
+              safelist: ['html', 'body'],
               defaultExtractor: (content) => content.match(/[\w-/:]+(?<!:)/g) || [],
             },
           ],

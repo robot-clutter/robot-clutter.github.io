@@ -1,6 +1,9 @@
 import { FC, ReactElement, ReactNode } from 'react';
 import { ThemeProvider } from 'next-themes';
 import { ToastProvider, DefaultToast } from 'react-toast-notifications';
+import 'typeface-ubuntu';
+import 'typeface-ubuntu-mono';
+import 'typeface-ubuntu-condensed';
 import 'line-awesome/dist/line-awesome/css/line-awesome.min.css';
 import PageWithLayoutType from '../types';
 

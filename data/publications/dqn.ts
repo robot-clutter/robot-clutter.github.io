@@ -5,9 +5,9 @@ const DQN_PUB = {
   title: 'Robust object grasping in clutter via singulation',
   image: {
     src: 'PUBLIC_FOLDER',
-    path: 'dqn_header_image.jpg',
-    width: 1040,
-    height: 975,
+    path: 'dqn_header_image.png',
+    width: 0,
+    height: 0,
   } as ImageInterface,
   type: '2019 IEEE International Conference on Robotics and Automation',
   authors: ['Marios Kiatos', 'Sotiris Malassiotis'],

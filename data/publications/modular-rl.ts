@@ -22,7 +22,7 @@ const MODULAR_RL_PUB = {
     },
     {
       link: 'https://github.com/robot-clutter/robot-clutter.github.io',
-      alias: 'Github Repo',
+      alias: 'Source Code',
       type: 'code',
       disabled: true,
       disabledText: 'Source code is not available yet. Please check again later.',

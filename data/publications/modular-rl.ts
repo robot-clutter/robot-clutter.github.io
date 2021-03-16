@@ -33,13 +33,15 @@ const MODULAR_RL_PUB = {
     //   type: 'documentation',
     // },
   ] as LinkInterface[],
-  //   bib: `
-  // @article{zeng2019tossingbot,
-  //   title={TossingBot: Learning to Throw Arbitrary Objects with Residual Physics},
-  //   author={Zeng, Andy and Song, Shuran and Lee, Johnny and Rodriguez, Alberto and Funkhouser, Thomas},
-  //   booktitle={Proceedings of Robotics: Science and Systems (RSS)},
-  //   year={2019}
-  // }`,
+  bib: `@ARTICLE{modularrl21,
+  author={I. {Sarantopoulos} and M. {Kiatos} and Z. {Doulgeri} and S. {Malassiotis}},
+  journal={IEEE Robotics and Automation Letters}, 
+  title={Total Singulation with Modular Reinforcement Learning}, 
+  year={2021},
+  volume={},
+  number={},
+  pages={1-1},
+  doi={10.1109/LRA.2021.3062295}}`
 };
 
 export default MODULAR_RL_PUB;

@@ -38,7 +38,7 @@ const SPLIT_DQN_PUB = {
     //   type: 'documentation',
     // },
   ] as LinkInterface[],
-  bib: `@inproceedings{splitdqn,
+  bib: `@inproceedings{splitdqn20,
   title={Split Deep Q-Learning for Robust Object Singulation},
   author={Sarantopoulos, Iason and Kiatos, Marios and Doulgeri, Zoe and Malassiotis, Sotiris},
   booktitle={2020 IEEE International Conference on Robotics and Automation (ICRA)},

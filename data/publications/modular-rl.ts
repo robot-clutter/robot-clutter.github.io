@@ -5,7 +5,7 @@ const MODULAR_RL_PUB = {
   title: 'Total Singulation with Modular Reinforcement Learning',
   image: {
     src: 'PUBLIC_FOLDER',
-    path: 'modular_rl_header_image.jpg',
+    path: 'modular_rl_header_image.png',
     width: 1040,
     height: 975,
   } as ImageInterface,

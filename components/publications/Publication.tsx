@@ -6,7 +6,7 @@ import PublicationAuthors from './PublicationAuthors';
 import ButtonLinks from './ButtonLinks';
 import BibtexBox from './BibtexBox';
 
-function Publication({ title, authors, type, abstract, image, video, code, bib }: PublicationInterface): ReactElement {
+function Publication({ title, authors, type, abstract, image, videos, code, bib }: PublicationInterface): ReactElement {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => setMounted(true), []);
@@ -66,7 +66,9 @@ function Publication({ title, authors, type, abstract, image, video, code, bib }
               </div>
               <div className="mt-5 prose prose-cyan text-gray-500 dark:text-gray-300 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
                 <h3 className="text-gray-500 dark:text-gray-300">Media</h3>
-                <ReactPlayer className="rounded-lg" width="auto" url={video} controls />
+                {videos.map((video: string, index: number) => {
+                  return <ReactPlayer key={index} className="mt-5 rounded-lg" width="auto" url={video} controls />;
+                })}
               </div>
               <BibtexBox bib={bib} />
             </div>

@@ -47,7 +47,7 @@ export interface PublicationInterface {
   abstract: string;
   authors: AUTHORS[];
   image: ImageInterface;
-  video: string;
+  videos: string[];
   code: LinkInterface[];
   bib?: string;
 }

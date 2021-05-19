@@ -2,6 +2,7 @@ import { NextPage } from 'next';
 import MainLayout from '../components/layouts/MainLayout';
 import SecondaryLayout from '../components/layouts/EmptyLayout';
 import { ReactElement, ReactNode } from 'react';
+import { AUTHORS } from '../data/authors';
 
 type PageWithMainLayoutType = NextPage & { layout: typeof MainLayout };
 
@@ -18,6 +19,7 @@ export interface LayoutInterface {
 export interface AuthorInterface {
   first_name: string;
   last_name: string;
+  url?: string;
 }
 
 export interface ImageInterface {
@@ -43,7 +45,7 @@ export interface PublicationInterface {
   type: string;
   title: string;
   abstract: string;
-  authors: string[];
+  authors: AUTHORS[];
   image: ImageInterface;
   video: string;
   code: LinkInterface[];

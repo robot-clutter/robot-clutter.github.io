@@ -1,4 +1,5 @@
 import { ImageInterface, LinkInterface } from '../../types';
+import { AUTHORS } from '../authors';
 
 const DQN_PUB = {
   slug: 'dqn',
@@ -10,7 +11,7 @@ const DQN_PUB = {
     height: 975,
   } as ImageInterface,
   type: '2019 IEEE International Conference on Robotics and Automation',
-  authors: ['Marios Kiatos', 'Sotiris Malassiotis'],
+  authors: [AUTHORS.MARIOS_KIATOS, AUTHORS.SOTIRIS_MALASIOTIS],
   abstract:
     'Grasping objects in a cluttered environment is challenging due to the lack of collision free grasp affordances. In such conditions, the target object touches or is covered by other objects in the scene, resulting in a failed grasp. To address this problem, we propose a strategy of singulating the object from its surrounding clutter, which consists of previously unseen objects, by means of lateral pushing movements. We employ reinforcement learning for obtaining optimal push policies given depth observations of the scene. The action-value function(Q-function) is approximated with a deep neural network. We train the robot in simulation and we demonstrate that the transfer of learned policies to the real environment is robust.',
   video: 'https://www.youtube.com/watch?v=nj2FxaUCA5c',

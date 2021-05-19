@@ -15,17 +15,21 @@ export const AUTHOR_DATA: AuthorDataInterface = {
   [AUTHORS.IASON_SARANTOPOULOS]: {
     first_name: 'Iason',
     last_name: 'Sarantopoulos',
+    url: 'https://arl.ee.auth.gr/people/sarantopoulos/',
   },
   [AUTHORS.MARIOS_KIATOS]: {
     first_name: 'Marios',
     last_name: 'Kiatos',
+    url: '',
   },
   [AUTHORS.ZOE_DOULGERI]: {
     first_name: 'Zoe',
     last_name: 'Doulgeri',
+    url: 'https://arl.ee.auth.gr/people/doulgeri/',
   },
   [AUTHORS.SOTIRIS_MALASIOTIS]: {
     first_name: 'Sotiris',
     last_name: 'Malassiotis',
+    url: '',
   },
 };

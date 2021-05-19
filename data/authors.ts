@@ -20,7 +20,7 @@ export const AUTHOR_DATA: AuthorDataInterface = {
   [AUTHORS.MARIOS_KIATOS]: {
     first_name: 'Marios',
     last_name: 'Kiatos',
-    url: '',
+    url: 'https://scholar.google.com/citations?user=VBOCox4AAAAJ',
   },
   [AUTHORS.ZOE_DOULGERI]: {
     first_name: 'Zoe',
@@ -30,6 +30,6 @@ export const AUTHOR_DATA: AuthorDataInterface = {
   [AUTHORS.SOTIRIS_MALASIOTIS]: {
     first_name: 'Sotiris',
     last_name: 'Malassiotis',
-    url: '',
+    url: 'https://scholar.google.com/citations?user=icuzuYgAAAAJ',
   },
 };

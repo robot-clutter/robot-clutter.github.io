@@ -17,11 +17,11 @@ function Intro(): ReactElement {
         <div className="text-justify mt-10 text-xl">
         In this project we aim to research and develop learning-based for manipulating objects in cluttered environments. During this project a number of publication has been produced that are listed below. Furthermore, the software developed for these methods is open source and can be found in our&nbsp;
         <span className="mt-6 font-medium text-cyan-600 dark:text-cyan-500 hover:underline">
-            <Link href="https://github.com/robot-clutter">github repos</Link>
+            <Link href="https://github.com/robot-clutter"><a target="_blank" rel="noreferrer">github repos</a></Link>
         </span>
         &nbsp;along with its&nbsp;
         <span className="mt-6 font-medium text-cyan-600 dark:text-cyan-500 hover:underline">
-            <Link href="https://robot-clutter.github.io/clt_core">documentation</Link>
+            <Link href="https://robot-clutter.github.io/clt_core"><a target="_blank" rel="noreferrer">documentation</a></Link>
         </span>
         .
         </div>

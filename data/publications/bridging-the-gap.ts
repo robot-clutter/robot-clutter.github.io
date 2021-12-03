@@ -10,7 +10,7 @@ const BRIDGING_THE_GAP_PUB = {
     width: 1040,
     height: 975,
   } as ImageInterface,
-  type: 'Preprint',
+  type: 'Preprint (2021)',
   authors: [AUTHORS.MARIOS_KIATOS, AUTHORS.IASON_SARANTOPOULOS, AUTHORS.SOTIRIS_MALASIOTIS, AUTHORS.ZOE_DOULGERI],
   abstract:
     "Non-prehensile pushing actions have the potential to singulate a target object from its surrounding clutter in order to facilitate the robotic grasping of the target. To address this problem we utilize a heuristic rule that moves the target object towards the workspace's empty space and demonstrate that this simple heuristic rule achieves singulation. Furthermore, we incorporate this heuristic rule to the reward in order to train more efficiently reinforcement learning (RL) agents for singulation. Simulation experiments demonstrate that this insight increases performance. Finally, our results show that the RL-based policy implicitly learns something similar to one of the used heuristics in terms of decision making.",
@@ -23,7 +23,7 @@ const BRIDGING_THE_GAP_PUB = {
     // },
     {
       link: 'https://arxiv.org/abs/2111.11156',
-      alias: 'Arxiv',
+      alias: 'arXiv',
       type: 'manuscript',
     },
     {

@@ -23,7 +23,7 @@ const SPLIT_DQN_PUB = {
     },
     {
       link: 'https://arxiv.org/abs/1909.08105',
-      alias: 'Arxiv',
+      alias: 'arXiv',
       type: 'manuscript',
     },
     {

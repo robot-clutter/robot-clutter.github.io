@@ -4,13 +4,15 @@ import { AUTHORS } from '../authors';
 const MODULAR_RL_PUB = {
   slug: 'modular-rl',
   title: 'Total Singulation with Modular Reinforcement Learning',
+  year: '2021',
   image: {
     src: 'PUBLIC_FOLDER',
     path: 'modular_rl_header_image.png',
     width: 1040,
     height: 975,
   } as ImageInterface,
-  type: 'IEEE Robotics and Automation Letters (2021)',
+  journal: 'IEEE Robotics and Automation Letters',
+  journal_small: 'RAL',
   authors: [AUTHORS.IASON_SARANTOPOULOS, AUTHORS.MARIOS_KIATOS, AUTHORS.ZOE_DOULGERI, AUTHORS.SOTIRIS_MALASIOTIS],
   abstract:
     'Prehensile robotic grasping of a target object in clutter is challenging because, in such conditions, the target touches other objects, resulting to the lack of collision free grasp affordances. To address this problem, we propose a modular reinforcement learning method which uses continuous actions to totally singulate the target object from its surrounding clutter. A high level policy selects between pushing primitives, which are learned separately. Prior knowledge is effectively incorporated into learning, through action primitives and feature selection increasing sample efficiency. Experiments demonstrate that the proposed method considerably outperforms the state-of-the-art methods in the singulation task. Furthermore, although training is performed in simulation the learned policy is robustly transferred to a real environment without a significant drop in success rate. Finally, singulation tasks in different environments are addressed by easily adding a new primitive and by retraining only the high level policy.',

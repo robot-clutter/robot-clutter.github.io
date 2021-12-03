@@ -42,8 +42,10 @@ export interface LinkInterface {
 
 export interface PublicationInterface {
   slug: string;
-  type: string;
   title: string;
+  year: string;
+  journal: string;
+  journal_small: string;
   abstract: string;
   authors: AUTHORS[];
   image: ImageInterface;

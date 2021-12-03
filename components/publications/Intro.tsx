@@ -33,6 +33,25 @@ function Intro(): ReactElement {
             </Link>
           </span>
           .
+          <p>
+            This research was conducted in&nbsp;
+            <span className="mt-6 font-medium text-cyan-600 dark:text-cyan-500 hover:underline">
+              <Link href="https://arl.ee.auth.gr">
+                <a target="_blank" rel="noreferrer">
+                  Automation and Robotics Lab
+                </a>
+              </Link>
+            </span>
+            &nbsp;of&nbsp;
+            <span className="mt-6 font-medium text-cyan-600 dark:text-cyan-500 hover:underline">
+              <Link href="https://www.auth.gr/en/">
+                <a target="_blank" rel="noreferrer">
+                  Aristotle University of Thessaloniki
+                </a>
+              </Link>
+            </span>
+            .
+          </p>
         </div>
       </div>
     </div>

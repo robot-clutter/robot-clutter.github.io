@@ -6,7 +6,17 @@ import PublicationAuthors from './PublicationAuthors';
 import ButtonLinks from './ButtonLinks';
 import BibtexBox from './BibtexBox';
 
-function Publication({ title, authors, journal, year, abstract, image, videos, code, bib }: PublicationInterface): ReactElement {
+function Publication({
+  title,
+  authors,
+  journal,
+  year,
+  abstract,
+  image,
+  videos,
+  code,
+  bib,
+}: PublicationInterface): ReactElement {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => setMounted(true), []);
@@ -17,7 +27,9 @@ function Publication({ title, authors, journal, year, abstract, image, videos, c
         <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
           <div className="hidden lg:block bg-gray-50 dark:bg-gray-900 absolute top-0 bottom-0 left-3/4 w-screen" />
           <div className="mx-auto text-base max-w-prose lg:max-w-none ">
-            <h2 className="text-base text-cyan-600 dark:text-cyan-800 font-semibold tracking-wide uppercase">{journal + " (" + year + ")"}</h2>
+            <h2 className="text-base text-cyan-600 dark:text-cyan-800 font-semibold tracking-wide uppercase">
+              {journal + ' (' + year + ')'}
+            </h2>
             <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 dark:text-gray-200 sm:text-4xl relative z-20">
               {title}
             </h3>

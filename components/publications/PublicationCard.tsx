@@ -20,7 +20,9 @@ function PublicationCard({ title, year, journal_small, abstract, slug, image }: 
             <p className="text-xl font-semibold text-gray-900 dark:text-gray-300 text-left">
               <Link href={`/${slug}`}>{title}</Link>
             </p>
-            <p className="mt-1 text-base font-semibold text-gray-500 dark:text-gray-400 text-left">{journal_small + " " + year}</p>
+            <p className="mt-1 text-base font-semibold text-gray-500 dark:text-gray-400 text-left">
+              {journal_small + ' ' + year}
+            </p>
             <p className="mt-3 text-base text-gray-500 dark:text-gray-400 text-left truncate">{abstract}</p>
           </div>
           <p className="text-left mt-6 font-medium text-cyan-600 dark:text-cyan-500 hover:underline">

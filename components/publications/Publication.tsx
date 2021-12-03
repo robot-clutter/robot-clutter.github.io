@@ -10,7 +10,7 @@ function Publication({ title, authors, type, abstract, image, videos, code, bib 
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => setMounted(true), []);
-
+  const has_media = videos.length > 0;
   return (
     <div className="bg-gray-50 dark:bg-gray-900 overflow-hidden">
       {mounted && (
@@ -64,12 +64,14 @@ function Publication({ title, authors, type, abstract, image, videos, code, bib 
                 <h3 className="text-gray-500 dark:text-gray-300">Abstract</h3>
                 <p>{abstract}</p>
               </div>
-              <div className="mt-5 prose prose-cyan text-gray-500 dark:text-gray-300 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
-                <h3 className="text-gray-500 dark:text-gray-300">Media</h3>
-                {videos.map((video: string, index: number) => {
-                  return <ReactPlayer key={index} className="mt-5 rounded-lg" width="auto" url={video} controls />;
-                })}
-              </div>
+              {has_media && (
+                <div className="mt-5 prose prose-cyan text-gray-500 dark:text-gray-300 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
+                  <h3 className="text-gray-500 dark:text-gray-300">Media</h3>
+                  {videos.map((video: string, index: number) => {
+                    return <ReactPlayer key={index} className="mt-5 rounded-lg" width="auto" url={video} controls />;
+                  })}
+                </div>
+              )}
               <BibtexBox bib={bib} />
             </div>
           </div>

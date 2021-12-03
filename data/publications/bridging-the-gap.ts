@@ -27,10 +27,10 @@ const BRIDGING_THE_GAP_PUB = {
       type: 'manuscript',
     },
     {
-      link: 'https://github.com/robot-clutter/bridging-the-gap',
+      link: 'https://github.com/robot-clutter/bridging_the_gap',
       alias: 'Source Code',
       type: 'code',
-      disabled: true,
+      disabled: false,
       disabledText: 'Source code is not available yet. Please check again later.',
     },
     // {

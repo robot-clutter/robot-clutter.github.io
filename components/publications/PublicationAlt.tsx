@@ -124,9 +124,17 @@ function PublicationAlt({
                   <BibtexBox bib={bib} />
                 </div>
               </div>
+              <div className="mt-5 prose prose-cyan text-gray-500 dark:text-gray-300 mx-auto">
+                <h3 className="font-semibold text-gray-500 dark:text-gray-300 ">Feature Video</h3>
+                {videos.map((video: string, index: number) => {
+                  return <ReactPlayer key={index} className="mt-5 rounded-lg" width="auto" url={video} controls />;
+                })}
+              </div>
               {example_videos && !!example_videos.length && (
                 <div>
-                  <h3 className="text-left text-xl mt-20">Example Videos</h3>
+                  <h3 className="text-center text-xl font-semibold text-gray-500 dark:text-gray-300 mt-20">
+                    Example Videos
+                  </h3>
                   <div className="grid sm:grid-cols-3 gap-4">
                     {/* <div className=" prose prose-cyan text-gray-500 dark:text-gray-300 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1"> */}
                     {/* <h3 className="text-gray-500 dark:text-gray-300">Media</h3> */}
@@ -139,7 +147,9 @@ function PublicationAlt({
               )}
               {failure_videos && !!failure_videos.length && (
                 <div>
-                  <h3 className="text-left text-xl mt-20">Failure Videos</h3>
+                  <h3 className="ext-center text-xl font-semibold text-gray-500 dark:text-gray-300 mt-20">
+                    Failure Videos
+                  </h3>
                   <div className="grid sm:grid-cols-3 gap-4">
                     {/* <h3 className="text-gray-500 dark:text-gray-300">Media</h3> */}
                     {failure_videos.map((video: string, index: number) => {

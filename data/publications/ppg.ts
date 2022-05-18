@@ -28,7 +28,8 @@ const LEARNING_PUSH_GRASPING_IN_DENSE_CLUTTER = {
   abstract2:
     'The video and the images illustrate the different ways that a push-grasping primitive can create free space around an object in order to establish a stable power grasp in clutter. A proper push-grasping can roll-in an object within the palm of the hand and roll out or translate other objects away from the hand’s closing region.',
   videos: ['task.mp4'],
-  example_videos: ['ral_video.mp4'],
+  summary_video: ['ral_video.mp4'],
+  example_videos: [],
   failure_videos: [],
   code: [
     // {

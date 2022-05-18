@@ -20,11 +20,12 @@ function PublicationAlt({
   github,
   example_videos,
   failure_videos,
+  summary_video,
 }: PublicationInterface): ReactElement {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => setMounted(true), []);
-  const has_media = videos.length > 0;
+  // const has_media = videos.length > 0;
   return (
     <div className="bg-gray-50 dark:bg-gray-900 overflow-hidden">
       {mounted && (
@@ -125,10 +126,9 @@ function PublicationAlt({
                 </div>
               </div>
               <div className="mt-5 prose prose-cyan text-gray-500 dark:text-gray-300 mx-auto">
-                <h3 className="font-semibold text-gray-500 dark:text-gray-300 ">Feature Video</h3>
-                {videos.map((video: string, index: number) => {
-                  return <ReactPlayer key={index} className="mt-5 rounded-lg" width="auto" url={video} controls />;
-                })}
+                <h3 className="font-semibold text-gray-500 dark:text-gray-300 ">Summary Video</h3>
+                  
+                   <ReactPlayer  className="mt-5 rounded-lg" width="auto" url={summary_video} controls />;
               </div>
               {example_videos && !!example_videos.length && (
                 <div>

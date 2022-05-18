@@ -71,7 +71,7 @@ function Publication({
             <div className="mt-8 lg:mt-0 lg:col-span-3 min-h-screen">
               <ButtonLinks code={code} />
 
-              <PublicationAuthors authors={authors} />
+              <PublicationAuthors authors={authors} label />
               <div className="mt-5 prose prose-cyan text-gray-500 dark:text-gray-300 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
                 <h3 className="text-gray-500 dark:text-gray-300">Abstract</h3>
                 <p>{abstract}</p>

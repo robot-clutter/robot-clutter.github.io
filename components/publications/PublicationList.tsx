@@ -15,9 +15,11 @@ function PublicationList({ data }: { data: PublicationInterface[] }): ReactEleme
           </h2>
         </div>
         <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
-          {data.map((pub: PublicationInterface) => {
-            return <PublicationCard key={pub.slug} {...pub} />;
-          })}
+          {data
+            .filter(({ is_hidden }) => !is_hidden)
+            .map((pub: PublicationInterface) => {
+              return <PublicationCard key={pub.slug} {...pub} />;
+            })}
         </div>
       </div>
     </div>

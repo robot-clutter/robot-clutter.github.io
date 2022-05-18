@@ -4,7 +4,8 @@ export const AUTHORS = {
   IASON_SARANTOPOULOS: 'IASON_SARANTOPOULOS',
   MARIOS_KIATOS: 'MARIOS_KIATOS',
   ZOE_DOULGERI: 'ZOE_DOULGERI',
-  SOTIRIS_MALASIOTIS: 'SOTIRIS_MALASIOTIS',
+  SOTIRIS_MALASSIOTIS: 'SOTIRIS_MALASSIOTIS',
+  LEONIDAS_KOUTRAS: 'LEONIDAS_KOUTRAS',
 } as const;
 
 export type AUTHORS = typeof AUTHORS[keyof typeof AUTHORS];
@@ -27,9 +28,14 @@ export const AUTHOR_DATA: AuthorDataInterface = {
     last_name: 'Doulgeri',
     url: 'https://arl.ee.auth.gr/people/doulgeri/',
   },
-  [AUTHORS.SOTIRIS_MALASIOTIS]: {
+  [AUTHORS.SOTIRIS_MALASSIOTIS]: {
     first_name: 'Sotiris',
     last_name: 'Malassiotis',
     url: 'https://scholar.google.com/citations?user=icuzuYgAAAAJ',
+  },
+  [AUTHORS.LEONIDAS_KOUTRAS]: {
+    first_name: 'Leonidas',
+    last_name: 'Koutras',
+    url: 'https://arl.ee.auth.gr/people/koutras/',
   },
 };

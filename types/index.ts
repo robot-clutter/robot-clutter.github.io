@@ -52,4 +52,6 @@ export interface PublicationInterface {
   videos: string[];
   code: LinkInterface[];
   bib?: string;
+  is_hidden?: boolean;
+  github?: string;
 }

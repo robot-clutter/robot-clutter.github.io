@@ -12,11 +12,14 @@ function PublicationAlt({
   journal,
   year,
   abstract,
+  abstract2,
   image,
   videos,
   code,
   bib,
   github,
+  example_videos,
+  failure_videos,
 }: PublicationInterface): ReactElement {
   const [mounted, setMounted] = useState(false);
 
@@ -35,7 +38,7 @@ function PublicationAlt({
               {title}
             </h3>
           </div>
-          <div className="mt-8 ">
+          <div className="">
             {/* <div className="relative lg:row-start-1 lg:col-start-4 lg:col-span-2">
               <svg
                 className="hidden lg:block absolute top-0 right-0 -mt-20 -mr-20"
@@ -94,11 +97,12 @@ function PublicationAlt({
                 </div>
               )}
                             <Image {...image} /> */}
+              <div className="mt-10 prose prose-cyan text-gray-500 dark:text-gray-300 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
+                {/* <h3 className="text-gray-500 dark:text-gray-300">Abstract</h3> */}
+                <p className="text-justify">{abstract2}</p>
+              </div>
               <div className="grid sm:grid-cols-2 gap-4 mt-8">
                 <div className="mt-5 prose prose-cyan text-gray-500 dark:text-gray-300 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
-                  <h3 className="text-gray-500 dark:text-gray-300 ml-2 inline-flex items-center px-3 py-1 mr-4 mt-4">
-                    Code
-                  </h3>
                   <div className="text-left ">
                     <h6>
                       Code is available on{' '}
@@ -120,14 +124,30 @@ function PublicationAlt({
                   <BibtexBox bib={bib} />
                 </div>
               </div>
-              <div className="grid sm:grid-cols-1 gap-4 mt-8">
-                <div className="mt-5 prose prose-cyan text-gray-500 dark:text-gray-300 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
-                  {/* <h3 className="text-gray-500 dark:text-gray-300">Media</h3> */}
-                  {videos.map((video: string, index: number) => {
-                    return <ReactPlayer key={index} className="mt-5 rounded-lg" width="auto" url={video} controls />;
-                  })}
+              {example_videos && !!example_videos.length && (
+                <div>
+                  <h3 className="text-left text-xl mt-20">Example Videos</h3>
+                  <div className="grid sm:grid-cols-3 gap-4">
+                    {/* <div className=" prose prose-cyan text-gray-500 dark:text-gray-300 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1"> */}
+                    {/* <h3 className="text-gray-500 dark:text-gray-300">Media</h3> */}
+                    {example_videos.map((video: string, index: number) => {
+                      return <ReactPlayer key={index} className="mt-5 rounded-lg" width="auto" url={video} controls />;
+                    })}
+                    {/* </div> */}
+                  </div>
                 </div>
-              </div>
+              )}
+              {failure_videos && !!failure_videos.length && (
+                <div>
+                  <h3 className="text-left text-xl mt-20">Failure Videos</h3>
+                  <div className="grid sm:grid-cols-3 gap-4">
+                    {/* <h3 className="text-gray-500 dark:text-gray-300">Media</h3> */}
+                    {failure_videos.map((video: string, index: number) => {
+                      return <ReactPlayer key={index} className="mt-5 rounded-lg" width="auto" url={video} controls />;
+                    })}
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         </div>

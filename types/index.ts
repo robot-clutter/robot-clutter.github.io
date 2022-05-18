@@ -47,6 +47,7 @@ export interface PublicationInterface {
   journal: string;
   journal_small: string;
   abstract: string;
+  abstract2?: string;
   authors: AUTHORS[];
   image: ImageInterface;
   videos: string[];
@@ -54,4 +55,6 @@ export interface PublicationInterface {
   bib?: string;
   is_hidden?: boolean;
   github?: string;
+  example_videos?: string[];
+  failure_videos?: string[];
 }

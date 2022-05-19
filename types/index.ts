@@ -57,5 +57,5 @@ export interface PublicationInterface {
   github?: string;
   example_videos?: string[];
   failure_videos?: string[];
-  summary_video?: string;
+  summary_video?: string[];
 }

@@ -126,13 +126,12 @@ function PublicationAlt({
                 </div>
               </div>
               <div className="mt-5 prose prose-cyan text-gray-500 dark:text-gray-300 mx-auto">
-                <h3 className="font-semibold text-gray-500 dark:text-gray-300 ">Summary Video</h3>
-                  
-                   <ReactPlayer  className="mt-5 rounded-lg" width="auto" url={summary_video} controls />;
+                <h3 className="text-2xl font-semibold text-gray-500 dark:text-gray-300 ">Summary Video</h3>
+                <ReactPlayer className="mt-5 rounded-lg" width="auto" url={summary_video} controls />
               </div>
               {example_videos && !!example_videos.length && (
                 <div>
-                  <h3 className="text-center text-xl font-semibold text-gray-500 dark:text-gray-300 mt-20">
+                  <h3 className="text-center mb-8 text-2xl font-semibold text-gray-500 dark:text-gray-300 mt-20">
                     Example Videos
                   </h3>
                   <div className="grid sm:grid-cols-3 gap-4">
@@ -146,14 +145,22 @@ function PublicationAlt({
                 </div>
               )}
               {failure_videos && !!failure_videos.length && (
-                <div>
-                  <h3 className="ext-center text-xl font-semibold text-gray-500 dark:text-gray-300 mt-20">
+                <div className="">
+                  <h3 className="text-center text-2xl mb-8 font-semibold text-gray-500 dark:text-gray-300 mt-20">
                     Failure Videos
                   </h3>
-                  <div className="grid sm:grid-cols-3 gap-4">
+                  <div className="grid sm:grid-cols-2 gap-4">
                     {/* <h3 className="text-gray-500 dark:text-gray-300">Media</h3> */}
                     {failure_videos.map((video: string, index: number) => {
-                      return <ReactPlayer key={index} className="mt-5 rounded-lg" width="auto" url={video} controls />;
+                      return (
+                        <ReactPlayer
+                          key={index}
+                          className="mt-5 rounded-lg mx-auto text-center items-center align-middle"
+                          width="auto"
+                          url={video}
+                          controls
+                        />
+                      );
                     })}
                   </div>
                 </div>

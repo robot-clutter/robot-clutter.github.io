@@ -56,6 +56,7 @@ export interface PublicationInterface {
   is_hidden?: boolean;
   github?: string;
   example_videos?: string[];
+  example_videos2?: string[];
   failure_videos?: string[];
   summary_video?: string[];
 }

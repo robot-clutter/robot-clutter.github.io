@@ -19,6 +19,7 @@ function PublicationAlt({
   bib,
   github,
   example_videos,
+  example_videos2,
   failure_videos,
   summary_video,
 }: PublicationInterface): ReactElement {
@@ -134,14 +135,31 @@ function PublicationAlt({
                   <h3 className="text-center mb-8 text-2xl font-semibold text-gray-500 dark:text-gray-300 mt-20">
                     Example Videos
                   </h3>
+                  <div className="mt-5 prose prose-cyan text-gray-500 dark:text-gray-300 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
+                    {/* <h3 className="text-gray-500 dark:text-gray-300">Abstract</h3> */}
+                    <p className="text-center">
+                      The proposed Power Push-Grasping policy on several test cases in real environment.
+                    </p>
+                  </div>
                   <div className="grid sm:grid-cols-3 gap-4">
                     {/* <div className=" prose prose-cyan text-gray-500 dark:text-gray-300 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1"> */}
                     {/* <h3 className="text-gray-500 dark:text-gray-300">Media</h3> */}
                     {example_videos.map((video: string, index: number) => {
                       return <ReactPlayer key={index} className="mt-5 rounded-lg" width="auto" url={video} controls />;
                     })}
-                    {/* </div> */}
                   </div>
+                  <p className="text-center mt-5">
+                    The proposed Power Push-Grasping policy on several test cases in real environment.
+                  </p>
+                  {example_videos2 && (
+                    <div className="grid sm:grid-cols-3 gap-4">
+                      {example_videos2.map((video: string, index: number) => {
+                        return (
+                          <ReactPlayer key={index} className="mt-5 rounded-lg" width="auto" url={video} controls />
+                        );
+                      })}
+                    </div>
+                  )}
                 </div>
               )}
               {failure_videos && !!failure_videos.length && (

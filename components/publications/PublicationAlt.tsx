@@ -149,7 +149,7 @@ function PublicationAlt({
                     })}
                   </div>
                   <p className="text-center mt-5">
-                    The proposed Power Push-Grasping policy on several test cases in real environment.
+                    The proposed policy achieves scene clearance on random packed scenes as well as in challenging ones.
                   </p>
                   {example_videos2 && (
                     <div className="grid sm:grid-cols-3 gap-4">

@@ -133,7 +133,7 @@ function PublicationAlt({
               {example_videos && !!example_videos.length && (
                 <div>
                   <h3 className="text-center mb-8 text-2xl font-semibold text-gray-500 dark:text-gray-300 mt-20">
-                    Example Videos
+                    Examples
                   </h3>
                   <div className="mt-5 prose prose-cyan text-gray-500 dark:text-gray-300 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
                     {/* <h3 className="text-gray-500 dark:text-gray-300">Abstract</h3> */}
@@ -165,7 +165,7 @@ function PublicationAlt({
               {failure_videos && !!failure_videos.length && (
                 <div className="">
                   <h3 className="text-center text-2xl mb-8 font-semibold text-gray-500 dark:text-gray-300 mt-20">
-                    Failure Videos
+                    Failures
                   </h3>
                   <div className="grid sm:grid-cols-2 gap-4">
                     {/* <h3 className="text-gray-500 dark:text-gray-300">Media</h3> */}

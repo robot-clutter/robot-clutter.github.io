@@ -6,7 +6,7 @@ const LEARNING_PUSH_GRASPING_IN_DENSE_CLUTTER = {
   slug: 'ppg',
   title: 'Learning Push-Grasping in Dense Clutter',
   year: '2022',
-  is_hidden: true,
+  is_hidden: false,
   image: {
     src: 'PUBLIC_FOLDER',
     path: 'push_grasping_header_image.png',

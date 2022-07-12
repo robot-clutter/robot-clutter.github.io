@@ -33,28 +33,36 @@ const LEARNING_PUSH_GRASPING_IN_DENSE_CLUTTER = {
   example_videos2: ['e17_cropped.mp4', 'e8_cropped_05.mp4', 'e23_cropped_06.mp4'],
   failure_videos: ['e15_cropped_f1.mp4', 'e24_cropped_f2.mp4'],
   code: [
-    // {
-    //   link: 'https://ieeexplore.ieee.org/document/8793972',
-    //   alias: 'IEEEXplore',
-    //   type: 'manuscript',
-    // },
+    {
+      link: 'https://ieeexplore.ieee.org/document/9815129',
+      alias: 'IEEEXplore',
+      type: 'manuscript',
+    },
     // {
     //   link: 'https://arxiv.org/abs/1909.08105',
     //   alias: 'Arxiv',
     //   type: 'manuscript',
     // },
-    // {
-    //   link: 'https://github.com/robot-clutter/robot-clutter.github.io',
-    //   alias: 'Github Repo',
-    //   type: 'code',
-    // },
+    {
+      link: 'https://github.com/mkiatos/power-push-grasping',
+      alias: 'Github Repo',
+      type: 'code',
+    },
     // {
     //   link: 'https://github.com/robot-clutter/robot-clutter.github.io',
     //   alias: 'Documentation',
     //   type: 'documentation',
     // },
   ] as LinkInterface[],
-  bib: ` `,
+  bib: `@ARTICLE{9815129,
+author={Kiatos, Marios and Sarantopoulos, Iason and Koutras, Leonidas and Malassiotis, Sotiris and Doulgeri, Zoe},
+journal={IEEE Robotics and Automation Letters}, 
+title={Learning Push-Grasping in Dense Clutter}, 
+year={2022},
+volume={},
+number={},
+pages={1-8},
+doi={10.1109/LRA.2022.3188437}}`,
 };
 
 export default LEARNING_PUSH_GRASPING_IN_DENSE_CLUTTER;

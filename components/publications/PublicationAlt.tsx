@@ -3,8 +3,8 @@ import ReactPlayer from 'react-player';
 import Image from './Image';
 import { PublicationInterface } from '../../types';
 import PublicationAuthors from './PublicationAuthors';
-import ButtonLinks from './ButtonLinks';
-import BibtexBox from './BibtexBox';
+import ButtonLinksAlt from './ButtonLinksAlt';
+import BibtexBoxAlt from './BibtexBoxAlt';
 
 function PublicationAlt({
   title,
@@ -40,7 +40,7 @@ function PublicationAlt({
               {title}
             </h3>
           </div>
-          <div className="">
+          <div className="-mt-6">
             {/* <div className="relative lg:row-start-1 lg:col-start-4 lg:col-span-2">
               <svg
                 className="hidden lg:block absolute top-0 right-0 -mt-20 -mr-20"
@@ -75,8 +75,8 @@ function PublicationAlt({
             </div> */}
 
             <div className="mt-8 lg:mt-0 w-full min-h-screen text-center">
-              <ButtonLinks code={code} />
               <PublicationAuthors authors={authors} />
+              <ButtonLinksAlt code={code} />
               <div className="mt-5 prose prose-cyan text-gray-500 dark:text-gray-300 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
                 {/* <h3 className="text-gray-500 dark:text-gray-300">Abstract</h3> */}
                 <p className="text-justify">{abstract}</p>
@@ -123,7 +123,7 @@ function PublicationAlt({
                 </div>
 
                 <div>
-                  <BibtexBox bib={bib} />
+                  <BibtexBoxAlt bib={bib} />
                 </div>
               </div>
               <div className="mt-5 prose prose-cyan text-gray-500 dark:text-gray-300 mx-auto">

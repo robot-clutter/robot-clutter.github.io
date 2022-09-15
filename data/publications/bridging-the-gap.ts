@@ -5,6 +5,7 @@ const BRIDGING_THE_GAP_PUB = {
   slug: 'bridging-the-gap',
   title: 'Bridging the gap between learning and heuristic based pushing policies',
   year: '2021',
+  is_hidden: true,
   image: {
     src: 'PUBLIC_FOLDER',
     path: 'bridging_the_gap_header_image.jpg',
